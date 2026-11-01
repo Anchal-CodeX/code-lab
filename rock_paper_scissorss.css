@@ -1,0 +1,102 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-primary-color:rgb(2, 9, 28);
+    --bg-sec-color:rgb(62, 97, 194);
+    --bg-x-color:rgb(45, 139, 232);
+    --bg-x-color:rgb(246, 211, 85);
+    --bg-restart-color:rgb(188, 192, 203);
+
+    /*boder*/
+     --border-primary-color: #0e1428;
+
+    --border-radius-xs: 4px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;
+    --border-radius-2xl: 24px;
+
+    /* height width*/
+    --height-sm:40px;
+    --width-sm:40px;
+    --height-md:60px;
+    --width-md:60px;
+    --height-lg:200px;
+    --width-lg:200px;
+
+    --margin-sm:40px;
+    --margin-lw:40px 0px;
+    --color-:rgb(92, 131, 250)
+}
+
+body{
+   
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-primary-color);
+    color: var(--color-);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    font-size: 4rem;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 600;
+   text-shadow: 2px 3px 1px rgb(193, 192, 192);
+   display: flex;
+   justify-content: center;
+}
+h1:hover,.result:hover,.score:hover{
+    text-decoration:wavy;
+    transform: scale(1.05);
+    color: rgb(181, 149, 4);
+}
+.con{
+    display: flex;
+    justify-content:space-between;
+    margin: var(--margin-lw);
+}
+.reset,.reset-img{
+    height: var(--height-md);
+    width: var(--width-md);
+    background-color: var(--bg-restart-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: 2px 3px 1px rgb(255, 255, 255);
+}
+.hand{
+    display: flex;
+    justify-content:space-between;
+    gap: 40px;
+    align-items: center;
+}
+.rocks, .papers, .scissorss ,.rock, .paper, .scissors{
+    height: var(--height-lg);
+    width: var(--width-lg);
+    border-radius: var(--border-radius-lg);
+    
+}
+
+.reset-img:hover,.reset:hover,.rocks:hover, .papers:hover, .scissorss:hover {
+    box-shadow: 2px 3px 1px rgb(255, 255, 255);
+    transform: scale(1.04);
+    background-color: rgb(181, 149, 4);
+}
+
+.result{
+    font-size: 70px;
+}
+.score{
+    font-size: 50px;
+}
+.nob,.player{
+    font-size: 30px;
+}
